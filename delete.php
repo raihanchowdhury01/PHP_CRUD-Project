@@ -9,3 +9,5 @@ if($con->query($delete_sql)){
 }
 // connect database and delete command for delete data from database end from here
 ?>
+<br><br>
+<a style='text-decoration:none; color: black; text-transform:capitalize;' href='read.php'><button>Back to list page</button></a>

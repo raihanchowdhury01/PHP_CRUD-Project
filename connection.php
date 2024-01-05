@@ -25,5 +25,4 @@ if(isset($_POST['btn'])){
         echo "Data Created!";
     }
 }
-
 ?>
