@@ -1,6 +1,11 @@
 
+<div>
+<!-- create button for back to main page -->
+<a style='text-decoration:none; color: black; text-transform:capitalize;' href='index.php'><button>Back to main page</button></a>
+</div>
+
 <?php
-echo "<a style='text-decoration:none; color: black; text-transform:capitalize;' href='index.php'>Back to main page </a>";
+// database connection and make select command and othe section for view to data from database with table start from here
 include("connection.php");
 $sql = "SELECT * FROM crud";
 $res = $con->query($sql);
@@ -18,4 +23,5 @@ if ($data) {
 } else {
     echo "<tr><td>No record found</td></tr>";
 }
+// database connection and make select command and othe section for view to data from database with table end from here
 ?>

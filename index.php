@@ -8,10 +8,10 @@
 <body>
     <?php
     include("form.php");
-    // database connection and create data 
+    // database connection
     include("connection.php");
     echo "<br>";
-    // read data from database 
+    //make button for go back read file 
     echo "<a href='read.php'>View data</a>";
     $con->close();
 

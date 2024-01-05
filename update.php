@@ -1,12 +1,8 @@
 <?php
-//update details
-$con = new mysqli("localhost", "root", "", "test");
+// database connection 
+include("dbConnection.php");
 
-// check database connection 
-if (!$con) {
-    echo mysqli_connect_error();
-}
-
+// get id from url for data view in update form input field with sql command
 $id = $_GET['i'];
 $select_sql = "SELECT * FROM crud WHERE id = '$id'";
 $data = $con->query($select_sql);
@@ -21,6 +17,7 @@ $row = mysqli_fetch_array($data);
     </form>
 </div>
 <?php
+// update command for data update 
 if (isset($_POST['update_btn'])) {
     $name = $_POST['name'];
     $phone = $_POST['phone'];
